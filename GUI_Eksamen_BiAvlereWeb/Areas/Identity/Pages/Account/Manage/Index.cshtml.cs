@@ -129,10 +129,10 @@ namespace GUI_Eksamen_BiAvlereWeb.Areas.Identity.Pages.Account.Manage
 
             var user = await _userManager.GetUserAsync(User);
 
-            string firstname = Input.FirstName;
+
             if (Input.FirstName != user.FirstName)
             {
-                user.FirstName = firstname; // Input.FirstName;
+                user.FirstName = Input.FirstName;
             }
 
             if (Input.LastName != user.LastName)
