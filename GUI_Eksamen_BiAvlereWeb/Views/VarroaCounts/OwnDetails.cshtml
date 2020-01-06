@@ -1,0 +1,42 @@
+﻿@model GUI_Eksamen_BiAvlereWeb.Models.VarroaCount
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details for your post</h1>
+
+<div>
+    <h4>VarroaCount</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BeeHive)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BeeHive)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DateForCount)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DateForCount)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NumberOfDaysObserved)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NumberOfDaysObserved)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Comment)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Comment)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.VarroaCountId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

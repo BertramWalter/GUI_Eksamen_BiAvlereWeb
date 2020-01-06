@@ -1,0 +1,61 @@
+﻿@model IEnumerable<GUI_Eksamen_BiAvlereWeb.Models.VarroaCount>
+
+@{
+    ViewData["Title"] = "IndexOwnData";
+}
+
+<h1>Personal posts</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BeeHive)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateForCount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumberOfDaysObserved)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Comment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ZipCode)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+    <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.BeeHive)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateForCount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumberOfDaysObserved)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comment)
+            </td>
+            <th>
+                @Html.DisplayFor(modelItem => item.ZipCode)
+            </th>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.VarroaCountId">Edit</a> |
+                <a asp-action="OwnDetails" asp-route-id="@item.VarroaCountId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.VarroaCountId">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+

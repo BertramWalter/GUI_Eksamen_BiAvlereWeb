@@ -1,0 +1,111 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+    color: #ffffcc;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  /* Set the fixed height of the footer here */
+  height: 20px;
+  line-height: 20px; /* Vertically center the text there */
+}
+
+
+
+.img2 {
+    max-width: 80%;
+    height: auto;
+}
+
+.img {
+    max-width: 50%;
+    height: auto;
+}
+
+.floatright {
+    padding-left: 0px;
+    float: right;
+    max-width: 50%;
+    height: auto;
+}
+
+.floatleft {
+    padding-left: 0px;
+    float: left;
+    max-width: 50%;
+    height: auto;
+}
+
+h1 {
+    font-weight: bold;
+    font-weight: bolder;
+    color: #228b22;
+    text-align: center;
+    margin: 0;
+}
+
+
+footer {
+    background-color: #ffffcc;
+    color: #000000;
+    font-size: .60em;
+    font-style: italic;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 70px;
+    clear: both;
+}
+
+footer a:link {
+    color: #228b22;
+}
+
+footer a:visited {
+    color: #ffffcc;
+}
